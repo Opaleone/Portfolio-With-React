@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100;300;400;500;700&display=swap');
+@import "normalize.css";
+
+:root {
+  --dark: #111;
+  --white: #ddd;
+}
+
+* {
+  font-family: 'Libre Franklin', sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+  background-image: url('../images/pexels-stephan-seeber-1054218.jpg');
+  height: 100%;
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  background-size: 100%;
+  color: var(--white);
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(40, 40, 40, 0.9);
+  width: 100%;
+  padding: 30px 0;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.page-title {
+  font-size: 50px;
+  font-weight: 500;
+  padding-left: 30px;
+  cursor: pointer;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+  font-size: 30px;
+  padding-right: 30px;
+}
+
+.single-link {
+  margin: 0 10px;
+  border-bottom: 3px solid;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.main-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 75vh;
+}
+
+.main-title-header {
+  font-size: 100px;
+  font-weight: 500;
+}
+
+.sub-title-header {
+  font-size: 40px;
+  font-weight: 100;
+}
+
+.main-project-container {
+  display: flex;
+  /* flex: 1; */
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  margin: 10px 300px;
+  min-height: 75vh;
+}
+
+.project-card {
+  display: flex;
+  /* flex: 1; */
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  background-color: rgba(40, 40, 40, 0.9);
+  margin: 10px 10px;
+  border: solid var(--dark);
+  border-radius: 10px;
+  width: 40%;
+}
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-name {
+  display: inline;
+  font-size: 50px;
+  text-align: center;
+}
+
+.project-link {
+  display: inline;
+  color: var(--white);
+  text-decoration: none;
+  margin-top:30px;
+  font-size: 20px;
+}
+
+.about-me-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 75vh;
+}
+
+.divider {
+  height: 16rem;
+  width: 10px;
+  background-color: gray;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.profile-pic {
+  width: 150px;
+  border: solid var(--dark);
+  border-radius: 75px;
+  margin-right: 30px;
+}
+
+.bio {
+  width: 50%;
+  background-color: rgba(40, 40, 40, 0.7);
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  height: 60px;
+  background-color: rgba(40, 40, 40, 0.9);
+}
+
+.main-contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-header {
+  font-size: 50px;
+  margin-bottom: 15px;
+  font-weight: 500;
+
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  height: 500px;
+  background-color: rgba(40, 40, 40, 0.9);
+  border-radius: 20px;
+}
+
+.form-input {
+  width: 70%;
+  margin: 10px;
+}
+
+.footer-link {
+  margin: 20px;
+  color: var(--white);
+  text-decoration: none;
+}
+
+.nav-anchor {
+  color: var(--white);
+  text-decoration: none;
+  margin: 0 10px;
+  border-bottom: 3px solid;
+  cursor: pointer;
+  padding: 5px;
+}
+
+#name-input {
+  height: 40px;
+  padding-left: 10px;
+}
+
+#comment-textarea {
+  height: 250px;
+  padding: 10px 10px;
+}
+
+#submit-button {
+  border: none;
+  border-radius: 5px;
+  width: 20%;
+  height: 2rem;
+  font-size: 20px;
+  font-weight: 300 ;
+  background-color: var(--dark);
+  color: var(--white);
+  cursor: pointer;
+  transition: ease 0.125s;
+  opacity: 0.7;
+}
+
+#submit-button:hover {
+  width: 30%;
+  opacity: 1;
+}
+
+.single-link:hover, .nav-anchor:hover {
+  background-color: var(--white);
+  color: var(--dark);
+  border-radius: 10px;
+}
+
+.footer-link:hover {
+  opacity: 0.7;
+}
+/* .main-container {
+
+} */
